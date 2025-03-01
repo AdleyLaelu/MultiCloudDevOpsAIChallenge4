@@ -172,28 +172,29 @@ Remember, your primary goal is to help users find the best products for their ne
 2. Click on the IAM role link. This will take you to the IAM console with the correct role selected.
 3. In the IAM console, choose "Add permissions" and then "Create inline policy".
 4. In the JSON tab, paste the following policy:
+
    ```bash
    {
   "Version": "2012-10-17",
   "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "lambda:InvokeFunction",
-      "Resource": "arn:aws:lambda:*:*:function:cloudmart-list-products"
-    },
-    {
-      "Effect": "Allow",
-      "Action": "bedrock:InvokeModel",
-      "Resource": "arn:aws:bedrock:*::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0"
-    }
-  ]
+{
+"Effect": "Allow",
+"Action": "lambda:InvokeFunction",
+"Resource": "arn:aws:lambda:*:*:function:cloudmart-list-products"
+},
+{
+"Effect": "Allow",
+"Action": "bedrock:InvokeModel",
+"Resource": "arn:aws:bedrock:*::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0"
+}]
 }
 ```
-- 
-### **Step 1: Add HashiCorp GPG Key**
-```sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
-sudo yum -y install terraform
 
+## Add HashiCorp GPG Key
+
+```bash
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+sudo yum -y install terraform
 ```
 1. Replace cloudmart-list-products with the actual name of your Lambda function, if different.
 2. Name the policy (for example, "BedrockAgentLambdaAccess") and create it.
