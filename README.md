@@ -29,9 +29,6 @@ Technology	Purpose
 - **DynamoDB** 📊 - NoSQL Database
 
 ---
-hi
-
----
 
 ## 📜 Step-by-Step Instructions
 # **Creating resources using Terraform**
@@ -297,6 +294,7 @@ sudo yum -y install terraform
 
 ![Capture d’écran 2025-02-28 140540](https://github.com/user-attachments/assets/74109f2b-6db0-4601-a421-380a1943be2d)
 
+---
 ## Create an Alias for the Agent:
 
 1. On the agent details page, go to the "Aliases" section.
@@ -321,7 +319,7 @@ sudo yum -y install terraform
 1. Go to the API Keys section in your OpenAI account.
 2. Generate a new API key.
 3. Copy this key, you'll need it for your environment variables.
-
+---
 ## Redeploy the backend with AI Assistants
 - Update the cloudmart-backend.yaml file with AI Assistants information
 Open the cloudmart-backend.yaml file:
@@ -379,6 +377,7 @@ spec:
 ```bash
 kubectl apply -f cloudmart-backend.yaml
 ```
+---
 ![Capture d’écran 2025-02-28 150624](https://github.com/user-attachments/assets/6fb2aa0b-9deb-4b22-922a-f2909c81aec8)
 
 ![Capture d’écran 2025-02-28 202855](https://github.com/user-attachments/assets/61361c6a-8e40-45e1-8367-6647edfbe8f6)
