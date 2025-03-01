@@ -3,10 +3,11 @@
 This repository contains the full implementation of CloudMart, a modern e-commerce platform, enhanced with CI/CD pipelines, AI Assistants, and dynamic cloud deployment using AWS and OpenAI services.
 
 ## 📌 Project Overview
-CloudMart is a multi-cloud e-commerce application developed as part of the MultiCloud, DevOps & AI Challenge. The project focuses on:
-Enhancing user experience with AI Assistants, powered by Amazon Bedrock (Claude 3 Sonnet) and OpenAI Assistant.
+CloudMart is a multi-cloud e-commerce application developed as part of the MultiCloud, DevOps & AI Challenge. 
+The project focuses on:
+- Enhancing user experience with AI Assistants, powered by Amazon Bedrock (Claude 3 Sonnet) and OpenAI Assistant.
 Amazon Bedrock with Claude 3 Sonnet - This system serves as the primary customer-facing assistant, providing product recommendations and eliminating the need for manual product searches. Customers can simply describe what they're looking for, and the AI will suggest relevant products from the CloudMart catalog.
-OpenAI Assistant - This system handles customer support functions, including answering inquiries and processing order cancellations, replacing traditional customer service interactions with immediate, intelligent responses.
+- OpenAI Assistant - This system handles customer support functions, including answering inquiries and processing order cancellations, replacing traditional customer service interactions with immediate, intelligent responses.
 The AI Assistants offer product recommendations, assist with order cancellations, and handle customer queries.
 # 🏗️ Architecture Overview
 ## 🛠 Environments and Technologies Used  🚀 Features
