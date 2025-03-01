@@ -13,11 +13,11 @@ The AI Assistants offer product recommendations, assist with order cancellations
 ## 🛠 Environments and Technologies Used  🚀 Features
 Technology	Purpose
 
-- **AWS EKS	Hosting the application**
-- AWS Lambda: Fetching product data from DynamoDB
-- Amazon Bedrock: AI product recommendation assistant
-- OpenAI Assistant: AI customer support assistant
-- Terraform: Infrastructure as Code (IaC)
+- **AWS EKS**:	For Hosting the application
+- **AWS Lambda**: To fetch product data from DynamoDB
+- **Amazon Bedrock**: AI product recommendation assistant
+- **OpenAI Assistant**: AI customer support assistant
+- **Terraform**: Infrastructure as Code (IaC)
 
 
 
