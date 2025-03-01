@@ -173,21 +173,24 @@ Remember, your primary goal is to help users find the best products for their ne
 3. In the IAM console, choose "Add permissions" and then "Create inline policy".
 4. In the JSON tab, paste the following policy:
 
-   ```bash    {
-  "Version": "2012-10-17",
-  "Statement": [
+### IAM Policy for Bedrock Agent Access
+
+```json
 {
-"Effect": "Allow",
-"Action": "lambda:InvokeFunction",
-"Resource": "arn:aws:lambda:*:*:function:cloudmart-list-products"
-},
-{
-"Effect": "Allow",
-"Action": "bedrock:InvokeModel",
-"Resource": "arn:aws:bedrock:*::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0"
-}]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "lambda:InvokeFunction",
+            "Resource": "arn:aws:lambda:*:*:function:cloudmart-list-products"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "bedrock:InvokeModel",
+            "Resource": "arn:aws:bedrock:*::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0"
+        }
+    ]
 }
-```
 ```
 
 ## Add HashiCorp GPG Key
